@@ -1,0 +1,30 @@
+body{
+font-family: 'Freckle Face', cursive;
+font-size: 40px;
+text-align: center;
+background-color: #B6E3E9;
+}
+
+h1{
+color: #FDABAE;
+}
+
+iframe,img {
+border: 10px solid #FAD4AE;
+padding: 30px;
+}
+
+img:hover{
+transform: scale(1.2);
+}
+
+img{
+transition: transform 0.2s;
+}
+
+.line{
+width: 850px;
+height: 20px;
+background-color: #FDABAE;
+margin: 25px auto;
+}
