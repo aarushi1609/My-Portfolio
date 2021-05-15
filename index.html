@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio </title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
 </head>
 
 <body>
-    <section id= "apps">
-    <h1> Apps </h1>
-        <div class="line"></div>
-        <iframe width="400" height="620" src="https://studio.code.org/projects/applab/CA6iAI4JlZFcrvS6e2rJp4ESeCVlIrdOxVaCwLv4Xrn/embed?nosource"></iframe>
-        
-        <iframe width="400" height="620" src="https://studio.code.org/projects/applab/jrUvD92EYqs_5nXsMN8iZPMkz2XUfQPQqk2RO05NCsx/embed?nosource"></iframe>
-    </section>
-    
-    <section id= "games">
-    <h1> Games </h1>
-        <div class="line"></div>
-        <a href="https://studio.code.org/projects/applab/RqL3BHSV8Aet6fY4F9thc165T6qSikW-JTQAsjIAgso" target="_blank"> <img src="Game-1%20-%20Roll%20the%20dice.png"></a>
-        
-        <a href="https://studio.code.org/projects/applab/00jiFGLcjgyKn1tLXohZe7y1T6cncKCsP3m20aKrS_I"> <img src="thumbnail.png"></a>
-    </section>
-    
-    <section id= "chatbot">
-    <h1> Chatbots</h1>
-        <div class= "line"></div>
-        <iframe
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/128f5399-1dfc-406e-925c-6336056c8391">
-</iframe>
-        
-        <iframe
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/c546cb60-f5e2-4d71-b337-5cbd8654c499">
-</iframe>
-      
-    </section>
-</body>
-</html>
+    <div class="container">
+
+        <section id="apps">
+            <h1 class="heading1"> Apps </h1>
+            <div class="line"></div>
+            <iframe width="500" height="700" src="https://studio.code.org/projects/applab/CA6iAI4JlZFcrvS6e2rJp4ESeCVlIrdOxVaCwLv4Xrn/embed?nosource"></iframe>
+
+            <iframe width="500" height="700" src="https://studio.code.org/projects/applab/jrUvD92EYqs_5nXsMN8iZPMkz2XUfQPQqk2RO05NCsx/embed?nosource"></iframe>
+        </section>
+
+        <section id="games">
+            <h1 class="heading1"> Games </h1>
+            <div class="line"></div>
+            <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <center>
+                            <a href="https://studio.code.org/projects/applab/RqL3BHSV8Aet6fY4F9thc165T6qSikW-JTQAsjIAgso" target="_blank"> <img src="Game-1%20-%20Roll%20the%20dice.png"></a>
+                            <div class="carousel-content">
+                                <p> Roll The Dice</p>
+                            </div>
+                        </center>
+
+                    </div>
+                    <div class="item">
+                        <center>
+                            <a href="https://studio.code.org/projects/applab/00jiFGLcjgyKn1tLXohZe7y1T6cncKCsP3m20aKrS_I"> <img src="thumbnail.png"></a>
+                            <div class="carousel-content">
+                                <p> Blind Spot</p>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+                    <span class=" glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+                    <span class=" glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </section>
+
+        <section id="chatbot">
+            <h1 class= "heading1"> Chatbots</h1>
+            <div class="line"></div>
+            <iframe allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/128f5399-1dfc-406e-925c-6336056c8391">
+            </iframe>
+
+            <iframe allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/c546cb60-f5e2-4d71-b337-5cbd8654c499">
+            </iframe>
+
+        </section>
+    </div>
+</body></html>
